@@ -16,7 +16,7 @@ public class Gun : MonoBehaviour
         textMeshPro.text = ammo + " / " + reserveAmmo;
         if (Input.GetButtonDown("Fire1"))
         {
-            if(ammo > 0)
+            if(ammo > 0 && Time.timeScale == 1)
             {
                 Shoot();
             }
