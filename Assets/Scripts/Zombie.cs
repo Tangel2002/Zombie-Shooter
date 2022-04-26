@@ -3,18 +3,23 @@ using UnityEngine.AI;
 
 public class Zombie : MonoBehaviour
 {
-    public float speed = 5f;
     public CharacterController controller;
-    public Transform player;
+    GameObject player;
     public NavMeshAgent nav;
     float attackCooldown = 2;
     bool attackReady = true;
+    PlayerHealth playersHealth;
     // Update is called once per frame
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        playersHealth = player.GetComponent<PlayerHealth>();
+    }
     void Update()
     {
         if(player != null)
         {
-            nav.destination = player.position;
+            nav.destination = player.transform.position;
         }
 
 
@@ -34,6 +39,7 @@ public class Zombie : MonoBehaviour
             if (hit.transform.gameObject.name == "Player" && attackCooldown == 2)
             {
                 attackReady = false;
+                playersHealth.TakeDamage();
             }
             
         }
