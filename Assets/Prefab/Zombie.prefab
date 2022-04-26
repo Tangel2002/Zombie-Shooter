@@ -130,7 +130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a606065c12f4c99468fb7cf6623c8cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   controller: {fileID: 8734184084077575041}
   nav: {fileID: 8734184084077575055}
 --- !u!114 &8734184084077575054
@@ -146,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 4
+  ammo: {fileID: 6360775956904371883, guid: e77a2a437c8a42e40a5707c15a49d4ae, type: 3}
 --- !u!195 &8734184084077575055
 NavMeshAgent:
   m_ObjectHideFlags: 0

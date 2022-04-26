@@ -320,6 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 8
+  ammo: {fileID: 6360775956904371883, guid: e77a2a437c8a42e40a5707c15a49d4ae, type: 3}
 --- !u!195 &4129002199177350299
 NavMeshAgent:
   m_ObjectHideFlags: 0

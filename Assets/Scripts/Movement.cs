@@ -11,9 +11,6 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-
-
-
         float mouseXAxis = Input.GetAxis("Mouse X") * mouseSens * Time.deltaTime;
         float mouseYAxis = Input.GetAxis("Mouse Y") * mouseSens * Time.deltaTime;
 
@@ -34,7 +31,4 @@ public class Movement : MonoBehaviour
 
         characterController.Move(velocity * Time.deltaTime);
     }
-
-
-        
 }
