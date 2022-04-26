@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -9,14 +7,13 @@ public class Movement : MonoBehaviour
     public float speed = 15;
     float xRotation = 0;
     public CharacterController characterController;
-    void Start()
-    {
-        
-    }
-
+    Vector3 velocity;
 
     void Update()
     {
+
+
+
         float mouseXAxis = Input.GetAxis("Mouse X") * mouseSens * Time.deltaTime;
         float mouseYAxis = Input.GetAxis("Mouse Y") * mouseSens * Time.deltaTime;
 
@@ -29,10 +26,13 @@ public class Movement : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float verticle = Input.GetAxis("Vertical");
 
-        Vector3 move = fp.transform.right * horizontal + transform.forward * verticle;
+        Vector3 move = fp.transform.right * horizontal + fp.transform.forward * verticle;
 
         characterController.Move(move * speed * Time.deltaTime);
 
+        velocity.y += -9.81f * Time.deltaTime;
+
+        characterController.Move(velocity * Time.deltaTime);
     }
 
 
