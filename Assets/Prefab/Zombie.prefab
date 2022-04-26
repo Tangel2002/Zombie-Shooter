@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8734184084077575042}
   - component: {fileID: 8734184084077575045}
   - component: {fileID: 8734184084077575044}
-  - component: {fileID: 8734184084077575041}
   - component: {fileID: 8734184084077575040}
   - component: {fileID: 8734184084077575054}
   - component: {fileID: 8734184084077575055}
@@ -100,24 +99,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!143 &8734184084077575041
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8734184084077575047}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 1
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8734184084077575040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a606065c12f4c99468fb7cf6623c8cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 8734184084077575041}
+  controller: {fileID: 0}
   nav: {fileID: 8734184084077575055}
 --- !u!114 &8734184084077575054
 MonoBehaviour:

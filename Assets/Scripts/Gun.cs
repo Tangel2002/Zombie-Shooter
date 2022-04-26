@@ -1,10 +1,11 @@
 using UnityEngine;
-
+using TMPro;
 public class Gun : MonoBehaviour
 {
     public int ammo = 15;
+    public int reserveAmmo = 0;
     public Camera cam;
-
+    public TextMeshProUGUI textMeshPro;
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -12,6 +13,7 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        textMeshPro.text = ammo + " / " + reserveAmmo;
         if (Input.GetButtonDown("Fire1"))
         {
             if(ammo > 0)
