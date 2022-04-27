@@ -8,7 +8,7 @@ public class AmmoPickup : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             Gun ammo = other.gameObject.GetComponent<Gun>();
-            ammo.reserveAmmo += Random.Range(2, 5);
+            ammo.reserveAmmo += Random.Range(4, 6);
 
             Destroy(gameObject);
         }

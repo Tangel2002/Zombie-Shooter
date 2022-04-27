@@ -5,7 +5,7 @@ public class Movement : MonoBehaviour
     public GameObject fp;
     public float mouseSens = 50;
     public float speed = 15;
-    float xRotation = 1;
+    float xRotation = 0;
     public CharacterController characterController;
     Vector3 velocity;
 

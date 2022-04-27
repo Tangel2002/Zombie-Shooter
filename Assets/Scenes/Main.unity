@@ -711,8 +711,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -671.57196, y: -40.2141}
-  m_SizeDelta: {x: 360.8562, y: 130.4281}
+  m_AnchoredPosition: {x: -577.17, y: 0.000011444}
+  m_SizeDelta: {x: 765.6516, y: 130.4281}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &915049635
 MonoBehaviour:
@@ -738,7 +738,10 @@ MonoBehaviour:
 
     Left Click - Shoot
 
-    R Key - Reload'
+    R Key - Reload
+
+    Shoot Brown
+    Crate For Ammo Drop'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
