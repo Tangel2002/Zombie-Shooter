@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
 
@@ -10,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
         textMeshPro.text = "Health: " + health.ToString();
         if(health <= 0)
         {
-
+            SceneManager.LoadScene("Lose");
         }
     }
 
