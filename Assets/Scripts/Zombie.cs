@@ -17,6 +17,11 @@ public class Zombie : MonoBehaviour
     }
     void Update()
     {
+        if (controller.isGrounded == false)
+        {
+            controller.Move(Vector3.down * Time.deltaTime * 5);
+        }
+        
         if(player != null)
         {
             nav.destination = player.transform.position;

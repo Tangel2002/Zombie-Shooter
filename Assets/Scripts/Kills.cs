@@ -14,6 +14,7 @@ public class Kills : MonoBehaviour
         textMeshProUGUI.text = "Zombie Kills: " + kills;
         if(kills >= 100)
         {
+            Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("Win");
         }
     }

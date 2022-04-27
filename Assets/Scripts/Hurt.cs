@@ -15,6 +15,8 @@ public class Hurt : MonoBehaviour
         if(health <= 0)
         {
             Instantiate(ammo, gameObject.transform.position, gameObject.transform.rotation);
+            AudioSource death = GameObject.FindGameObjectWithTag("death").GetComponent<AudioSource>();
+            death.Play();
             manager.GetComponent<Kills>().kills++;
             Die();
         }

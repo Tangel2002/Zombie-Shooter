@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
         textMeshPro.text = "Health: " + health.ToString();
         if(health <= 0)
         {
+            Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("Lose");
         }
     }

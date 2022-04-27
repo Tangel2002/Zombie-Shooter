@@ -22,7 +22,7 @@ public class Pause : MonoBehaviour
     {
         if (!paused)
         {
-
+            Cursor.lockState = CursorLockMode.None;
             pauseCanv.gameObject.SetActive(true);
             mainCanv.gameObject.SetActive(false);
             Time.timeScale = 0;
@@ -30,6 +30,7 @@ public class Pause : MonoBehaviour
         }
         else
         {
+            Cursor.lockState = CursorLockMode.Locked;
             Time.timeScale = 1;
             pauseCanv.gameObject.SetActive(false);
             mainCanv.gameObject.SetActive(true);

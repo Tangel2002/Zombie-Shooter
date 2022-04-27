@@ -5,7 +5,7 @@ public class Movement : MonoBehaviour
     public GameObject fp;
     public float mouseSens = 50;
     public float speed = 15;
-    float xRotation = 0;
+    float xRotation = 1;
     public CharacterController characterController;
     Vector3 velocity;
 
@@ -26,9 +26,14 @@ public class Movement : MonoBehaviour
         Vector3 move = fp.transform.right * horizontal + fp.transform.forward * verticle;
 
         characterController.Move(move * speed * Time.deltaTime);
+        if (!characterController.isGrounded)
+        {
+            velocity.y += -9.81f * Time.deltaTime;
 
-        velocity.y += -9.81f * Time.deltaTime;
-
-        characterController.Move(velocity * Time.deltaTime);
+            characterController.Move(velocity * Time.deltaTime);
+        }
+        else
+            velocity.y = 0;
+        
     }
 }

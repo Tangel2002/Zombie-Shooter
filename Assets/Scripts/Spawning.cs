@@ -5,7 +5,7 @@ public class Spawning : MonoBehaviour
     public GameObject prefab1;
     public GameObject prefab2;
 
-    float cooldown = 5;
+    float cooldown = 3;
     int max = 0;
 
     void Update()
@@ -25,13 +25,13 @@ public class Spawning : MonoBehaviour
                 temp.GetComponent<Hurt>().health += max / 10;
             }
             max++;
-            cooldown = 5;
+            cooldown = 3;
             TP();
         }
     }
 
     void TP()
     {
-        gameObject.transform.position = new Vector3(Random.Range(-25, 81), 1, Random.Range(-25, 81));
+        gameObject.transform.position = new Vector3(Random.Range(-25, 81), 3, Random.Range(-25, 81));
     }
 }
