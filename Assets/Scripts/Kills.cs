@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Kills : MonoBehaviour
 {
-    public int kills = 95;
+    public int kills = 0;
     public TextMeshProUGUI textMeshProUGUI;
 
 

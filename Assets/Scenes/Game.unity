@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97921efbd21eed24e8895105ccc5c9b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kills: 95
+  kills: 0
   textMeshProUGUI: {fileID: 1072007497}
 --- !u!4 &298218700
 Transform:
